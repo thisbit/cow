@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trideset + let Mesta žensk / Thirty + Years of City of Women - Digitalni arhiv</title>
+    <style>
+
+        @font-face {
+            font-family: 'Apercu-Light';
+            src: url('./fonts/apercu-light.woff');
+        }
+
+        @font-face {
+            font-family: 'Apercu-Regular';
+            src: url('./fonts/apercu-regular.woff');
+        }
+
+        @font-face {
+            font-family: 'Apercu-Medium';
+            src: url('./fonts/apercu-medium.woff');
+        }
+
+        @font-face {
+            font-family: 'Apercu-Black';
+            src: url('./fonts/apercu-black.woff');
+        }
+
+        body {
+            font-family: 'Apercu-Regular';
+            padding: 0;
+            margin: 0;
+            color: var(--text-normal);
+            line-height: 1.35;
+        }
+
+        :is(h1, h2, h3, h4, h5, h6) {
+            font-family: 'Apercu-Black';
+            line-height: 1.1;
+            padding: 0;
+            margin: 0;
+            color: var(--text-contrast);
+        }
+
+        .slo {
+            font-family: "Apercu-Medium";
+            font-size: 1.15rem;
+        }
+
+        .eng {
+            font-family: 1rem;
+            font-family: "Apercu-Light";
+
+            :is(h1, h2, h3, h4, h5, h6) {
+                color: var(--primary-color);
+                font-family: "Apercu-Medium";
+            }
+        }
+
+        /* styles */
+
+        :root {
+            --site-gap: clamp(2rem, 1vw, 5rem);
+            --component-gap: clamp(0.5rem, 0.75vw, 1.5rem);
+            --primary-color: #8761a4;
+            --text-normal: #6d6e71;
+            --text-contrast: #000;
+            --primary-background: #c7b4d8;
+            --background: #fff;
+            --background-muted: #dbdad9;
+        }
+
+        .page-title {
+             padding: var(--site-gap);
+             font-family: "Apercu-Medium";
+        }
+
+        .thumbnail {
+            background-color: var(--background-muted);
+            text-decoration: none;
+            color: var(--text-normal);
+            padding: var(--site-gap);
+            display: flex;
+            flex-direction: column;
+            justify-content:flex-end;
+            gap: var(--component-gap);
+            :is(.eng, .slo) {
+                display: flex;
+                flex-direction: column;
+                gap: var(--component-gap);
+                flex: 1;
+                padding-block: var(--component-gap);
+            }
+            .eng {
+              justify-content: flex-end;
+              color: var(--primary-color)
+            }
+            .content-wrapper {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+        }
+
+        .thumbnail + .thumbnail {
+            border-left: 1px solid #dedede;
+        }
+        
+        .thumbnail::before {
+            content: "";
+            flex: 1;
+        }
+
+        .thumbnail:where(:hover) {
+            background-color: var(--primary-background);
+            --primary-color: #844886;
+            --text-normal: var(--text-contrast);
+        }
+        .container {
+            display: flex;
+            flex-direction: column-reverse;
+            height: 100%;
+            flex-grow: 1;
+        }
+        
+        main {
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            flex-grow: 1;
+            box-shadow: 0 8px 62px 4px rgba(135, 97, 164, 0.5);
+            border: 1px solid var(--primary-color);
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1 class="page-title">Trideset + let Mesta žensk / Thirty + Years of City of Women - Digitalni arhiv</h1>
+            <div class="grid">
+                <a href="https://mestozensk.org" class="thumbnail" target="_blank">
+                    <div class="content-wrapper">
+                        <div class="slo">
+                            <h2>Spletna stran Društva za promocijo žensk v kulturi - Mesto žensk</h2>
+                            <span class="description">Del zgodovine Mesta žensk je dostopen na obnovljeni spletni strani društva Mesto žensk.</span>
+                        </div>
+                        <div class="eng">
+                            <h2>Website of the Association for the Promotion of Women in Culture - City of Women</h2>
+                            <span class="description">Part of the history of the City of Women is available on the newly updated website of the City of Women association.</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://mrezni-muzej.mg-lj.si/en/organisations/?org=27" class="thumbnail" target="_blank">
+                    <div class="content-wrapper">                        
+                        <div class="slo">
+                            <h2>Mesto žensk na Mrežnem muzeju MG+MSUM</h2>
+                            <span class="description">Mrežni muzej MG+MSUM, je spletno dostopen arhiv kamor se od leta 2016 dalje postopoma shranjuje tudi video arhiv Mesta žensk. Zaradi zaščite avtorskih pravic je za dostop do nekaterih vsebin na Mrežnem muzeju potrebno prej kontaktirati MG+MSUM ali Mesto žensk.</span>
+                        </div>
+                        <div class="eng">
+                            <h2>City of Women on the Network Museum MG+MSUM</h2>
+                            <span class="description">The Network Museum MG+MSUM is a web-accessible archive where, since 2016, the video archive of City of Women has been gradually stored. Due to copyright protection, access to some content on the Network Museum might require prior contact with MG+MSUM or the City of Women.</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://vimeo.com/185931508?fl=pl&fe=vl" class="thumbnail" target="_blank">
+                    <div class="content-wrapper">
+                        <div class="slo">
+                            <h2>Mrežni muzej - video predstavitev Ide Hiršenfelder</h2>
+                            <span class="description">Več o Mrežnem muzeju in tam shranjenem arhivu Mesta ženska boste izvedele_ na predstavitvi Ide Hiršenfelder.</span>
+                        </div>
+                        <div class="eng">
+                            <h2>Network Museum - video presentation by Ida Hiršenfelder</h2>
+                            <span class="description">You will learn more about the Network Museum and the City of Women archive stored there in Ida Hiršenfelder's presentation.</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
